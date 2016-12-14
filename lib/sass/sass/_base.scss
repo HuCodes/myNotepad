@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/*设置兼容ie10  ie10并没有对屏幕的宽度 和 视口(viewport)的宽度进行区分。*/
+@-ms-viewport{width: device-width;}
+/*////////////////////初始化样式////////////////////*/
+html {box-sizing: border-box;}
+*,
+*:before,
+*:after {box-sizing: inherit;}
+body{
+	-ms-text-size-adjust: 100%;
+  	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	background-color:#fff;
+	color:#222;
+}
+body,
+h1,h2,h3,h4,h5,h6,
+p,
+blockquote,
+dl,
+dd{margin:0;}
+ul,
+ol{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
+//h1,h2,h3,h4,h5,h6{font-size:100%;}
+i,em{font-style:normal;}
+s,
+a{text-decoration:none;}
+a{color:#222;}
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}/*去掉默认样式*/
+img{border-style: none;vertical-align:bottom;}
+small {font-size: 80%;}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+ font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {overflow: visible;}
+textarea,
+input {
+  overflow: auto;
+  resize:none;
+  border: none;
+}
+/*////////////////////辅助类////////////////////*/
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after{display:table; content: " ";}
+.clearfix:after{clear: both;}
+.clearfix { *zoom: 1; }
+/* 版心 */
+.container{width:1210px;margin:0 auto;}
+.text-center{text-align:center;}
+.text-right{text-align:right;}
+
+.left{float:left;}
+.right{float:right;}
+
+.hide{display:none;}
+/* a[href^="http"]:empty::before{content: attr(href);} *//* 让空a标签的内容显示href链接 */
+/* .calendar {table-layout:fixed;} *//* 让表格单元格等宽 */

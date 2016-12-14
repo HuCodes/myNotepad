@@ -1,0 +1,59 @@
+<!DOCTYPE hmtl>
+<html lang="zh-CN" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="我的记事本"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>我的记事本</title>
+	<link rel="stylesheet" href="css/indexcss.css">
+</head>
+<body>
+	<header id="header" >
+		<nav id="js_showTop" class="header-nav">
+			<h1 id="name" class="font-style">&nbsp;随●记&nbsp;</h1>
+		</nav>
+	</header>
+	<section id="body" style="height:100%">
+		<div id="js_list" class="list">
+			<input id="js_create" class="list-create" type="button" name="button" value="新建" />
+			<input id="js_delete" class="list-delete" type="button" name="button" value="删除" />
+			<!--js codes-->
+		</div>
+		<div id="js_contentContainer" class="notepadContent">
+			<label for="js_title">标题：</label>
+			<input id="js_title" class="notepadContent-title" type="text" name="title" autofocus="autofocus" placeholder="来个秒懂的标题吧(必填哦)~" />
+			<textarea id="js_content" class="notepadContent-content" name="content" placeholder="好记性不如动手指:-)，记录关于你的~"></textarea>
+			<input id="js_save" class="notepadContent-save" type="button" name="button" value="保存" />
+		</div>
+	</section>
+	<footer id="footer">
+		<nav id="js_showBottom" class="footer-nav">
+			<a id="js_showBottomA1" class="nav-a1 font-style" href="javascript:void(null)"><i></i>列表</a>
+			<a id="js_showBottomA2" class="nav-a2style1 font-style" href="javascript:void(null)"><i></i>DIY</a>
+			<a id="js_showBottomA3" class="nav-a3style1 font-style" href="javascript:void(null)"><i></i>夜间</a>
+
+			<a id="js_showBottomA4" class="nav-a4 font-style" href="javascript:void(null)"><i></i>确定</a>
+			<a id="js_showBottomA5" class="nav-a5 font-style" href="javascript:void(null)"><i></i>取消</a>
+		</nav>
+		<div id="js_a2Show" class="a2-show">
+			<div class="show-font">
+				<h2 class="font-style">字号</h2>
+				<a href="javaScript:void(null)" id="js_fontMax" class="font-max font-style">大</a>
+				<a href="javaScript:void(null)" id="js_fontMin" class="font-min font-style">小</a>
+			</div>
+			<div id="js_showBg" class="show-bg">
+				<h2 class="font-style">背景</h2>
+				<a id="js_bgA1" class="bg-a1" href="javaScript:void(null)">&nbsp;</a>
+				<a id="js_bgA2" class="bg-a2" href="javaScript:void(null)"></a>
+				<a id="js_bgA3" class="bg-a3" href="javaScript:void(null)">&nbsp;</a>
+				<a id="js_bgA4" class="bg-a4" href="javaScript:void(null)"></a>
+				<a id="js_bgA5" class="bg-a5" href="javaScript:void(null)">&nbsp;</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-2.12.4.min.js"></script>
+	<script src="js/indexjs.js"></script>
+</body>
+</html>

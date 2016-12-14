@@ -1,0 +1,21 @@
+{
+  "name": "mywjs",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "gulp-compass": "^2.1.0"
+  },
+  "description": ""
+}
